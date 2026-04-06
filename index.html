@@ -3,75 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Dance Studio | Kathak Classes in DFW</title>
-  <meta name="description" content="Kathak and semi-classical dance classes in DFW. Learn from a Kathak Visharad with 15+ years experience.">
+
+  <title>Nritya Kathak Studio | Kathak Classes in DFW</title>
+
+  <meta name="description" content="Learn Kathak dance in Plano & Richardson. 15+ years experienced Kathak Visharad instructor. Kids & Adults classes.">
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-  <h1>My Dance Studio</h1>
-  <p>Kathak & Semi-Classical Dance Classes in DFW</p>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Nritya Kathak Studio</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#classes">Classes</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#classes">Classes</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="hero">
-  <h2>Experience the Grace of Kathak</h2>
-  <p>Beginner to advanced training for all age groups</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Experience the Grace of Kathak</h1>
+    <p>Traditional & Semi-Classical Dance Training in DFW</p>
+    <a href="#contact" class="btn">Enroll Now</a>
+  </div>
 </section>
 
-<section id="about">
+<!-- ABOUT -->
+<section id="about" class="section">
   <h2>About the Instructor</h2>
   <p>
-    Our instructor is a <strong>Kathak Visharad</strong> with over 15 years of experience
-    in teaching and performing classical Indian dance.
-    Trained in traditional gharanas, she blends authenticity with modern expression.
+    A certified <strong>Kathak Visharad</strong> with 15+ years of experience in teaching and performing.
+    Blending tradition with modern expression, the studio nurtures dancers of all ages.
   </p>
 </section>
 
-<section id="classes">
+<!-- CLASSES -->
+<section id="classes" class="section light">
   <h2>Classes Offered</h2>
-  <ul>
-    <li>Beginner Kathak</li>
-    <li>Intermediate & Advanced Kathak</li>
-    <li>Semi-Classical Dance</li>
-    <li>Kids & Adults Batches</li>
-  </ul>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Beginner Kathak</h3>
+      <p>Foundation, tatkaar, basic spins</p>
+    </div>
+
+    <div class="card">
+      <h3>Advanced Kathak</h3>
+      <p>Abhinaya, complex footwork, performances</p>
+    </div>
+
+    <div class="card">
+      <h3>Semi-Classical</h3>
+      <p>Fusion with Bollywood & expressive storytelling</p>
+    </div>
+  </div>
 </section>
 
-<section id="contact">
-  <h2>Enroll / Contact Us</h2>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Enroll / Contact</h2>
 
    <form target="_blank" action="https://formsubmit.co/world.rs@gmail.com" method="POST">
     <input type="hidden" name="_next" value="https://rsxyz.github.io/mydancestudio/thankyou.html">
-    <input type="hidden" name="_subject" value="New Student Inquiry!">
-    <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Student Inquiry">
 
     <input type="text" name="name" placeholder="Full Name" required>
     <input type="email" name="email" placeholder="Email Address" required>
     <input type="tel" name="phone" placeholder="Phone Number" required>
 
-    <select name="interest">
-      <option>Kathak Beginner</option>
-      <option>Kathak Intermediate</option>
-      <option>Semi-Classical</option>
-    </select>
-
-    <textarea name="message" placeholder="Tell us about yourself"></textarea>
+    <textarea name="message" placeholder="Tell us about your interest"></textarea>
 
     <button type="submit">Submit</button>
   </form>
 
-  <div class="contact-info">
-    <p>📞 Phone: +1-XXX-XXX-XXXX</p>
-    <p>📧 Email: my-dance-studio@gmail.com</p>
-    <p>📍 Location: Plano / Richardson, TX</p>
+  <div class="info">
+    <p>📞 +1-XXX-XXX-XXXX</p>
+    <p>📧 my-dance-studio@gmail.com</p>
+    <p>📍 Plano / Richardson, TX</p>
 
     <div class="socials">
       <a href="#">Facebook</a>
@@ -80,11 +95,15 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 My Dance Studio</p>
+  <p>© 2026 Nritya Kathak Studio</p>
 </footer>
 
-<script src="script.js"></script>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/1XXXXXXXXXX" class="whatsapp" target="_blank">
+  💬 Enroll Now
+</a>
 
 </body>
 </html>
