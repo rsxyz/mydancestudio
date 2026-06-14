@@ -1,40 +1,110 @@
-/* ==========================================================================
-   1. FONTS & BASE TYPOGRAPHY
-   ========================================================================== */
-/* Import standard Dance Website fonts directly from Google Fonts */
+/* Import Google Fonts for elegant typography */
 @import url('https://googleapis.com');
 
+:root {
+  /* Unified Color Palette */
+  --brand-primary: #721c24;     /* Elegant Deep Wine / Maroon */
+  --brand-secondary: #c5a059;   /* Soft Gold Accent */
+  --color-dark: #1e1e1e;          /* Rich Matte Black for headers/footers */
+  --color-light-bg: #fdfbf7;    /* Warm Cream / Off-White background */
+  --color-card-bg: #ffffff;     /* Pure White for surface cards */
+  --text-main: #3a3a3a;         /* Soft Dark Charcoal for body text */
+  --text-muted: #6c757d;        /* Grey for secondary text */
+
+  /* Typography System */
+  --font-headings: 'Cinzel', serif;    /* Classical, elegant heading font */
+  --font-body: 'Poppins', sans-serif;   /* Clean, highly readable body font */
+}
+
+/* Global Reset overrides */
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #333333; /* Soft dark gray for body text readability */
-  background-color: #ffffff;
+  font-family: var(--font-body);
+  background-color: var(--color-light-bg);
+  color: var(--text-main);
 }
 
-/* Elegant serif font for headings (matching the dance school theme) */
-h1, h2, h3, h4, h5, h6, .navbar-brand {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+/* Headings Consistency */
+h1, h2, h3, h4, h5, h6, .display-3, .display-5 {
+  font-family: var(--font-headings) !important;
+  color: var(--color-dark);
 }
 
-/* ==========================================================================
-   2. CUSTOM UTILITY CLASSES
-   ========================================================================== */
-/* Elegant accent accent color for headings/roles */
-.text-accent {
-  color: #bfa15f; /* Elegant gold tone often used on dance sites */
+/* Hero Section Refinement */
+.hero-section {
+  background: linear-gradient(rgba(30, 30, 30, 0.75), rgba(30, 30, 30, 0.75)), 
+              url('../images/hero-bg.jpg') center/cover no-repeat; /* Fallback to solid color if image missing */
+  background-color: var(--color-dark);
+  min-height: 70vh;
 }
 
-/* ==========================================================================
-   3. IMAGES & BACKGROUNDS
-   ========================================================================== */
-/* Instructor Profile Image Styling */
+.hero-section h1 {
+  color: #ffffff !important;
+}
+
+/* Button Refinement */
+.btn-custom {
+  background-color: var(--brand-secondary) !important;
+  color: var(--color-dark) !important;
+  font-weight: 600;
+  border: 1px solid var(--brand-secondary);
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--brand-secondary) !important;
+  color: var(--color-dark) !important;
+  border-color: var(--brand-secondary) !important;
+}
+
+/* Background Color Enforcements */
+.bg-dark {
+  background-color: var(--color-dark) !important;
+}
+
+.bg-custom-light {
+  background-color: var(--color-light-bg) !important;
+}
+
+/* Override Bootstrap Cards to match our variables */
+.card {
+  background-color: var(--color-card-bg) !important;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(114, 28, 36, 0.08) !important; /* Subtle wine-tinted shadow */
+}
+
+/* Unified Theme Colors for Specific Components */
+.text-brand-primary {
+  color: var(--brand-primary) !important;
+}
+
+.text-brand-secondary {
+  color: var(--brand-secondary) !important;
+}
+
+.bg-brand-primary {
+  background-color: var(--brand-primary) !important;
+  color: #ffffff !important;
+}
+
+/* Instructor Image Frame styling */
 .instructor-img {
-  object-fit: cover;
-  border-radius: 8px; /* Smooth rounded corners */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 4px solid var(--brand-secondary);
+  padding: 8px;
+  background-color: var(--color-card-bg);
+  border-radius: 4px;
 }
+
 
 /* Hero/Call-to-Action Section with Background Image Overlay */
 .hero-section {
