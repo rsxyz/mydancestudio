@@ -67,3 +67,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: #ffffff;
   transform: translateY(-2px); /* Slight lift effect on hover */
 }
+
+/* ==========================================================================
+   5. NAVIGATION LOGO STYLING
+   ========================================================================== */
+.navbar-logo {
+  height: 40px;          /* Restricts the height to fit cleanly inside the bar */
+  width: auto;           /* Automatically keeps the image proportional */
+  object-fit: contain;   /* Ensures the image doesn't stretch or warp */
+  border-radius: 4px;    /* Optional: Adds a tiny smooth edge to the corners */
+}
