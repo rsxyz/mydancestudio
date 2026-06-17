@@ -147,3 +147,26 @@ h1, h2, h3, h4, h5, h6, .display-3, .display-5 {
   object-fit: contain;   /* Ensures the image doesn't stretch or warp */
   border-radius: 4px;    /* Optional: Adds a tiny smooth edge to the corners */
 }
+
+/* Top Utility Bar Styles */
+.top-bar {
+    background-color: #f8f9fa;
+    padding: 8px 20px;
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.4rem;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0d6efd;
+}
+
+
+
+
